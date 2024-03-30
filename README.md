@@ -81,6 +81,19 @@ INNER JOIN skills_dim ON skills_job_dim.skill_id =skills_dim.skill_id
 ORDER BY
     salary_year_avg DESC
 ```
+| Rank | Skill      | Average Salary |
+|------|------------|----------------|
+| 1    | Go         | $115,320       |
+| 2    | Confluence | $114,210       |
+| 3    | Hadoop     | $113,193       |
+| 4    | Snowflake  | $112,948       |
+| 5    | Azure      | $111,225       |
+| 6    | BigQuery   | $109,654       |
+| 7    | AWS        | $108,317       |
+| 8    | Java       | $106,906       |
+| 9    | SSIS       | $106,683       |
+| 10   | Jira       | $104,918       |
+
 ### 3. Top Demanded Skills
 **Objective:** Identify the top 5 in-demand skills for Data Analysts by analyzing all job postings.
 
@@ -99,7 +112,18 @@ GROUP BY skills
 ORDER BY demand_count DESC
 LIMIT 10
 ```
-![Top demanded skills for data snalysts](Assets\Top_demand skills for data analysts.png)
+| Rank | Skill      | Demand Count |
+|------|------------|--------------|
+| 1    | Python     | 236          |
+| 2    | Tableau    | 230          |
+| 3    | R          | 148          |
+| 4    | SAS        | 63           |
+| 5    | Looker     | 49           |
+| 6    | Snowflake  | 37           |
+| 7    | Oracle     | 37           |
+| 8    | SQL Server | 35           |
+| 9    | Azure      | 34           |
+
 ### 4. Average Salary Associated with Each Skill
 **Objective:** Examine the average salary associated with each skill for Data Analyst positions, focusing on roles with specified salaries.
 
@@ -147,5 +171,39 @@ ORDER BY
     demand_count DESC
 LIMIT 25
 ```
-# What I learned 
-# Conclusions
+**Visualisation**:
+![Top paying skills]( Assets/top_10_in_demand_skills_with%20their%20corresponding_salaries.png "Top Demanded skills wih their corresponding avg_salaries")
+
+# 🌟 What I Learned
+Embarking on this project was a journey filled with insights, challenges, and triumphs. Here’s a snapshot of the valuable lessons I gathered along the way:
+
+- **SQL Mastery 📚:** Delving deep into SQL queries sharpened my ability to manipulate and analyze data, proving that SQL is an indispensable tool in the data analyst's arsenal.
+
+- **Tool Proficiency 🔧:** Working with PostgreSQL, Visual Studio Code, Git, and GitHub enhanced my understanding of these tools, from database management and code editing to version control and collaboration.
+
+- **Data Analysis Insights 📈:** Analyzing the job market for data analysts revealed the importance of continuous learning and adaptation. Understanding the demand for specific skills and the salary implications has been invaluable for career planning.
+
+- **Visualization Skills 🎨:** Creating visualizations to represent our findings not only helped in making the data more comprehensible but also improved my ability to communicate complex insights effectively.
+
+- **Strategic Thinking 🎯:** Identifying the optimal skills for career advancement taught me the importance of strategic planning in professional development. It’s not just about acquiring skills haphazardly but focusing on those that offer the highest return on investment.
+
+- **Collaboration and Sharing 🌍:** Utilizing Git and GitHub for version control and sharing our findings underscored the power of collaboration. Sharing knowledge and insights can amplify the impact of our work, contributing to a community of learning and growth.
+# Conclusions:Navigating the Data Analyst Job Market 🚀
+
+Our journey through the data analyst job market in 2023 has illuminated a highly competitive landscape, where distinct skills emerge as pivotal to success. The analysis of job postings provided a lens through which we could discern the skills in highest demand, offering a beacon for those poised to enter or advance within this dynamic field.
+
+**Insights from Our Exploration 📊📈**
+
+- **Essential Technical Skills**: Our findings reiterate the importance of foundational skills such as **SQL**, **Python**, and **Tableau**. SQL, with its unmatched relevance in data manipulation, Python's versatility and rich ecosystem, and Tableau's prowess in data visualization, stand out as the pillars upon which aspiring data analysts can build their careers.
+
+- **Beyond the Basics**: Skills like **R**, **Snowflake**, **Pandas**, and **Excel** highlight the evolving nature of data analysis, where cloud data warehousing, programming for data manipulation, and advanced spreadsheet operations are increasingly valued.
+
+- **Specialized Skills for Premium Salaries**: The analysis revealed that expertise in big data and cloud technologies (e.g., **PySpark**, **Databricks**), along with niche technical skills (e.g., **Couchbase**, **Watson**), command premium salaries. This underscores a growing market trend that rewards specialization and advanced technological proficiency.
+
+- **The Strategic Edge**: The project underscores the strategic advantage of honing skills in big data, embracing specialized technologies, and cultivating a strong foundation in programming. These areas are not just avenues for personal growth but are pivotal in securing top-paying roles within the industry.
+
+**Forward-Looking Strategies 🌟**
+
+As we conclude this exploration, it's clear that the path to success in the data analyst job market is multifaceted. Staying abreast of industry trends, investing in continuous learning, and strategically developing skills in areas of high demand and high reward are key. This project has not only shed light on the current landscape but also charted a course for those aiming to navigate their careers towards the most lucrative opportunities in data analytics.
+
+In essence, our journey through the data analyst job market reveals a world where agility, proficiency, and strategic learning converge to unlock the doors to success and fulfillment in a rapidly evolving field.
